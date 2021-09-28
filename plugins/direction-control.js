@@ -1,4 +1,3 @@
-import packageJson from '../package.json'
 
 export default ({ app }, inject) => {
     const dir = () =>

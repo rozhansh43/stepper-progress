@@ -1,5 +1,4 @@
 import colors from 'vuetify/es5/util/colors'
-import { I18N } from './config'
 
 
 export default {
@@ -43,8 +42,7 @@ export default {
 
     // Modules: https://go.nuxtjs.dev/config-modules
     modules: [
-        // Doc: https://github.com/nuxt-community/axios-module#usage
-        
+        // Doc: https://github.com/nuxt-community/axios-module#usage 
         [
           'nuxt-i18n',
           {
@@ -60,7 +58,6 @@ export default {
         ]
       ],
     plugins: [
-        '~/plugins/version',
         '~/plugins/direction-control',
     ],
     // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
