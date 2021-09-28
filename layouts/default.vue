@@ -25,13 +25,7 @@ export default {
   components: {
     LangSwitcher
   },
-  mounted() {
-    console.log(this.$dir()); // logs your direction 'ltr' or 'rtl'
-    console.log(this.$i18n.locale);
-    if (this.$i18n.locale === "fa") {
-      // make some action
-    }
-  }
+  
 }
 </script>
 
