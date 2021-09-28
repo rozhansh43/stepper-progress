@@ -3,13 +3,13 @@
     <header>
       <nav>
         <nuxt-link :to="localePath('index')">
-          {{ $t('home') }}
+          {{ $t('homepage.home') }}
         </nuxt-link>
         <nuxt-link :to="localePath('posts')">
-          {{ $t('posts') }}
+          {{ $t('homepage.posts') }}
         </nuxt-link>
         <nuxt-link :to="localePath('about')">
-          {{ $t('about') }}
+          {{ $t('homepage.about') }}
         </nuxt-link>
         <LangSwitcher />
       </nav>

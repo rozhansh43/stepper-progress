@@ -9,7 +9,7 @@
         {{ $t('homepage.subtitle') }}
       </h2>
       <p>
-        {{ $t('paragraph') }}
+        {{ $t('homepage.paragraph') }}
       </p>
     </div>
   </section>

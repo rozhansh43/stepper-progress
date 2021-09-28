@@ -3,7 +3,7 @@
     <div>
       <h1>{{ $t('about.aboutUsTitle') }}</h1>
       <p>
-        {{ $t('paragraph') }}
+        {{ $t('homepage.paragraph') }}
       </p>
     </div>
   </section>

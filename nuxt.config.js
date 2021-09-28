@@ -43,8 +43,22 @@ export default {
 
     // Modules: https://go.nuxtjs.dev/config-modules
     modules: [
-        ['nuxt-i18n', I18N],
-    ],
+        // Doc: https://github.com/nuxt-community/axios-module#usage
+        
+        [
+          'nuxt-i18n',
+          {
+            strategy: 'prefix_except_default',
+            defaultLocale: 'en',
+            langDir: 'languages/',
+            lazy: true,
+            locales: [
+              { code: 'fa', iso: 'fa-IR', name: 'fa', file: 'fa/index.js', dir:'rtl' },
+              { code: 'en', iso: 'en-US', name: 'en', file: 'en/index.js', dir:'ltr' }
+            ]
+          }
+        ]
+      ],
     plugins: [
         '~/plugins/version',
         '~/plugins/direction-control',
