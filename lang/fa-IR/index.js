@@ -1,4 +1,9 @@
+import about from './about.js'
+
 export default {
+    data(){
+        return about;
+    },
     home: 'خانه',
     posts: 'پست ها',
     about: 'درباره ما',
@@ -8,3 +13,4 @@ export default {
         subtitle: 'توضیحات'
     }
 }
+

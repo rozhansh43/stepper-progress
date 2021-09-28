@@ -1,4 +1,9 @@
+import about from './about.js'
+
 export default {
+    data(){
+        return about;
+    },
     home: 'Homepage',
     posts: 'Posts',
     about: 'About us',

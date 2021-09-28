@@ -1,24 +1,22 @@
-import en from '../lang/en-US.js'
-import fa from '../lang/fa-IR.js'
 
 
 export const I18N = {
     locales: [{
-            code: 'en',
-            iso: 'en-US',
-            name: 'English',
-            dir: 'ltr',
-        },
-        {
-            code: 'fa',
-            iso: 'fa-IR',
-            name: 'persian',
-            dir: 'rtl',
-        }
+        code: 'en',
+        iso: 'en-US',
+        name: 'English',
+        dir: 'ltr',
+        file: 'en-US/'
+    },
+    {
+        code: 'fa',
+        iso: 'fa-IR',
+        name: 'persian',
+        dir: 'rtl',
+        file: 'fa-IR/'
+    }
     ],
     defaultLocale: 'en',
-    vueI18n: {
-        fallbackLocale: 'en',
-        messages: { en, fa }
-    }
+    langDir: 'lang/',
+ 
 }
