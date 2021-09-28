@@ -12,7 +12,9 @@
   },
   "dependencies": {
     "core-js": "^3.15.1",
+    "i18n": "^0.13.3",
     "nuxt": "^2.15.7",
+    "nuxt-i18n": "^6.28.1",
     "vuetify": "^2.5.5"
   },
   "devDependencies": {
