@@ -9,9 +9,6 @@
           </ul>
           <div class="page1" v-if="length==1">
             PAGE 1
-            <button class="bg-light" @click="goback">
-              back
-            </button>
             <button class="bg-light" @click="gonext">
               next
             </button>
@@ -40,7 +37,7 @@
               back
             </button>
             <button class="bg-light" @click="gonext">
-              next
+              submit
             </button>
           </div>
       </div>
@@ -59,7 +56,7 @@ export default {
   },
   methods: {
     goback () {
-      if (this.length <= 4 || this.length >= 1 ) {
+      if (this.length <= 4 && this.length >= 2 ) {
       this.length = this.length - 1
       }
     },
