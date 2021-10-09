@@ -7,13 +7,13 @@
             <li :class="[length>=3 ? activeClass : disableClass]"/>
             <li :class="[length>=4 ? activeClass : disableClass]"/>
           </ul>
-          <div class="page1" v-if="length==1">
+          <div v-if="length==1">
             PAGE 1
             <button class="bg-light" @click="gonext">
               next
             </button>
           </div>
-          <div class="page3" v-if="length==2">
+          <div v-if="length==2">
             PAGE 2
              <button class="bg-light" @click="goback">
               back
@@ -22,7 +22,7 @@
               next
             </button>
           </div>
-          <div class="page3" v-if="length==3">
+          <div v-if="length==3">
             PAGE 3
              <button class="bg-light" @click="goback">
               back
@@ -31,7 +31,7 @@
               next
             </button>
           </div>
-          <div class="page3" v-if="length==4">
+          <div v-if="length==4">
             PAGE 4
              <button class="bg-light" @click="goback">
               back
