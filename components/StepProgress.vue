@@ -2,7 +2,10 @@
   <div class="root">
      <div class="container">
           <ul class="progressbar">
-            <li :class="[isActive ? activeClass : disableClass]" v-for="i in length" :key="i"> </li>
+            <li :class="[length >= 1 ? activeClass : disableClass]" :key="i"> </li>
+            <li :class="[length>=2 ? activeClass : disableClass]" :key="i"> </li>
+            <li :class="[length>=3 ? activeClass : disableClass]" :key="i"> </li>
+            <li :class="[length>=4 ? activeClass : disableClass]" :key="i"> </li>
           </ul>
           <div class="page1" v-if="length==1">
             PAGE 1
@@ -48,20 +51,20 @@ export default {
 
   data () {
     return {
-      length:4,
-      isActive: true ,
+      length:1,
+      isActive: false ,
       activeClass: 'active',
       disableClass: 'disable'
     }
   },
   methods: {
     goback () {
-      if (this.length <= 4 ) {
+      if (this.length <= 4 || this.length >= 1 ) {
       this.length = this.length - 1
       }
     },
     gonext () {
-      if (this.length <= 3 ) {
+      if (this.length <= 3 || this.length <= 1 ) {
         this.length = this.length + 1
       }
     }
