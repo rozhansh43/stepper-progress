@@ -2,10 +2,10 @@
   <div class="root">
      <div class="container">
           <ul class="progressbar">
-            <li :class="[length >= 1 ? activeClass : disableClass]" :key="i"> </li>
-            <li :class="[length>=2 ? activeClass : disableClass]" :key="i"> </li>
-            <li :class="[length>=3 ? activeClass : disableClass]" :key="i"> </li>
-            <li :class="[length>=4 ? activeClass : disableClass]" :key="i"> </li>
+            <li :class="[length >= 1 ? activeClass : disableClass]"/>
+            <li :class="[length>=2 ? activeClass : disableClass]"/>
+            <li :class="[length>=3 ? activeClass : disableClass]"/>
+            <li :class="[length>=4 ? activeClass : disableClass]"/>
           </ul>
           <div class="page1" v-if="length==1">
             PAGE 1
