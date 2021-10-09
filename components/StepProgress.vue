@@ -2,7 +2,7 @@
   <div class="root">
      <div class="container">
           <ul class="progressbar">
-            <li :class="[isActive ? activeClass : '', disableClass]" :key="i"> </li>
+            <li :class="[isActive ? activeClass : disableClass]" v-for="i in length" :key="i"> </li>
           </ul>
           <div class="page1" v-if="length==1">
             PAGE 1
